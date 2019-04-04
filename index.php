@@ -3,12 +3,12 @@
 
 <?php
 $dsn = "pgsql:"
-    . "host=ec2-54-228-243-238.eu-west-1.compute.amazonaws.com;"
-    . "dbname=d2ph88enfggjhe;"
-    . "user=diadldlkicwrrr;"
+    . "host=ec2-54-197-232-203.compute-1.amazonaws.com;"
+    . "dbname=d29chcvsqfn3rt;"
+    . "user=mzczddtnpbehwl;"
     . "port=5432;"
     . "sslmode=require;"
-    . "password=629b14b92503e6c97b3b8474057f9279c63381222333b848ca2cc51cb56ead52";
+    . "password=df9a4cf4f89c91788a80ba46ca2906d73a2f005fe212d060202db05396d5439b";
 
 $db = new PDO($dsn);
 ?>
