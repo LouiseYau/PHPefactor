@@ -65,7 +65,7 @@ $db = new PDO($dsn);
    </thead>
    <tbody>
 <?php
- $query = "SELECT user_id, q1, q2, q3, q4"
+ $query = "SELECT user_id, q1, q2, q3, q4 "
       . "FROM question_scores1";
  $result = $db->query($query);
  while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
@@ -80,21 +80,6 @@ $db = new PDO($dsn);
  $result->closeCursor();
 ?>
 
-<?php
-$query = "SELECT user_id, first_name, last_name, email, studentid  "
-     . "FROM users ORDER BY last_name ASC, first_name ASC";
-$result = $db->query($query);
-while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-    echo "<tr>";
-    echo "<td>" . $row["user_id"] . "</td>";
-    echo "<td>" . htmlspecialchars($row["first_name"]) . "</td>";
-    echo "<td>" . htmlspecialchars($row["last_name"]) . "</td>";
-    echo "<td>" . htmlspecialchars($row["email"]) . "</td>";
-    echo "<td>" . htmlspecialchars($row["studentid"]) . "</td>";
-    echo "</tr>";
-}
-$result->closeCursor();
-?>
    </tbody>
   </table>
 
