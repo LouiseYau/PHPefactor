@@ -116,11 +116,11 @@ $db = new PDO($dsn);
           </div>
         </div>
 
-        <div style="overflow:auto;">
+        <!-- <div style="overflow:auto;">
         <div style="float:right;">
         <input type="submit" id="submit" name="submit" 
               class="primary-btn" value="Submit"></input>
-          </div>
+          </div> -->
        </div>
         <!-- Circles which indicates the steps of the form: -->
         <div style="text-align:center;margin-top:40px;">
@@ -136,7 +136,7 @@ $db = new PDO($dsn);
 
   <!-- Javascript at the bottom of the page as of the DOM structure -->
   <script src="./newjs.js"></script>
-  <script src="./Javascript/form.js"></script>
+  <script src="./javascript/form.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
