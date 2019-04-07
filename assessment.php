@@ -65,7 +65,7 @@ $db = new PDO($dsn);
     <!-- <h4 align="center" style="color: teal;">VERBAL & WRITTEN COMMUNICATION</h4> -->
 
 <!-- form starts here -->
-     <form id="regForm" action="" method="post" >
+     <form id="regForm" action="postScore.php" method="post" >
       <!-- One "tab" for each step in the form: -->
       <h4 align="center" style="color: teal;">VERBAL & WRITTEN COMMUNICATION</h4>
       <br>
@@ -109,18 +109,18 @@ $db = new PDO($dsn);
           <p><input placeholder="Password..." oninput="this.className = ''"></p>
         </div> -->
 
-        <div style="overflow:auto;">
+        <!-- <div style="overflow:auto;">
           <div style="float:right;">
             <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
             <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
           </div>
-        </div>
+        </div> -->
 
-        <!-- <div style="overflow:auto;">
+        <div style="overflow:auto;">
         <div style="float:right;">
         <input type="submit" id="submit" name="submit" 
               class="primary-btn" value="Submit"></input>
-          </div> -->
+          </div>
        </div>
         <!-- Circles which indicates the steps of the form: -->
         <div style="text-align:center;margin-top:40px;">
