@@ -118,7 +118,7 @@ $db = new PDO($dsn);
 
         <div style="overflow:auto;">
         <div style="float:right;">
-        <input type="submit" id="confirmButton" name="submit" 
+        <input type="submit" id="submit" name="submit" 
               class="primary-btn" value="Submit"></input>
           </div>
        </div>
