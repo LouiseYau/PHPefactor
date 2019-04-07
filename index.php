@@ -35,10 +35,9 @@ $db = new PDO($dsn);
       <li>
         <a class="nav-link" href="">Home</a>
       </li>
-      
-        <!-- <li>
+         <li>
           <a class="nav-link" href="about.php">About</a>
-        </li> -->
+        </li>
         <li>
           <a class="nav-link" href="assessment.php">Self Assessment</a>
         </li>
