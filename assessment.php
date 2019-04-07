@@ -41,11 +41,11 @@ $db = new PDO($dsn);
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li>
-          <a class="nav-link" href="">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
-        <!-- <li>
+        <li>
           <a class="nav-link" href="about.php">About</a>
-        </li> -->
+        </li>
         <li>
           <a class="nav-link" href="assessment.php">Self Assessment</a>
         </li>
@@ -65,7 +65,7 @@ $db = new PDO($dsn);
     <!-- <h4 align="center" style="color: teal;">VERBAL & WRITTEN COMMUNICATION</h4> -->
 
 <!-- form starts here -->
-     <form id="regForm" action="postScore.php" method="post" >
+     <form id="regForm" action="" method="post" >
       <!-- One "tab" for each step in the form: -->
       <h4 align="center" style="color: teal;">VERBAL & WRITTEN COMMUNICATION</h4>
       <br>
