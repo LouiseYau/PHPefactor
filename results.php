@@ -64,21 +64,21 @@ $db = new PDO($dsn);
      </tr>
    </thead>
    <tbody>
-
-// $query = "SELECT user_id, q1, q2, q3, q4"
-    //  . "FROM question_scores1";
-// $result = $db->query($query);
-// while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-    // echo "<tr>";
-    // echo "<td>" . $row["user_id"] . "</td>";
-    // echo "<td>" . htmlspecialchars($row["q1"]) . "</td>";
-    // echo "<td>" . htmlspecialchars($row["q2"]) . "</td>";
-    // echo "<td>" . htmlspecialchars($row["q3"]) . "</td>";
-    // echo "<td>" . htmlspecialchars($row["q4"]) . "</td>";
-    // echo "</tr>";
-// }
-// $result->closeCursor();
-
+<?php
+ $query = "SELECT user_id, q1, q2, q3, q4"
+      . "FROM question_scores1";
+ $result = $db->query($query);
+ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+     echo "<tr>";
+     echo "<td>" . $row["user_id"] . "</td>";
+     echo "<td>" . $row["q1"] . "</td>";
+     echo "<td>" . $row["q2"] . "</td>";
+     echo "<td>" . $row["q3"] . "</td>";
+     echo "<td>" . $row["q4"] . "</td>";
+     echo "</tr>";
+ }
+ $result->closeCursor();
+?>
 
 <?php
 $query = "SELECT user_id, first_name, last_name, email, studentid  "
