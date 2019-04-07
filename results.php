@@ -12,6 +12,7 @@ $dsn = "pgsql:"
 
 $db = new PDO($dsn);
 ?>
+
 <html>
 <head>
   <title>New E-Factor</title>
@@ -52,29 +53,44 @@ $db = new PDO($dsn);
 <div class="containerWork">
   <h2 align="center" style="color: teal;"> Your Results </h2>
 
-
 <table>
    <thead>
     <tr>
      <th>User ID</th>
-     <th>Q1e</th>
+     <th>Q1</th>
      <th>Q2</th>
      <th>Q3</th>
      <th>Q4</th>
      </tr>
    </thead>
    <tbody>
+
+// $query = "SELECT user_id, q1, q2, q3, q4"
+    //  . "FROM question_scores1";
+// $result = $db->query($query);
+// while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+    // echo "<tr>";
+    // echo "<td>" . $row["user_id"] . "</td>";
+    // echo "<td>" . htmlspecialchars($row["q1"]) . "</td>";
+    // echo "<td>" . htmlspecialchars($row["q2"]) . "</td>";
+    // echo "<td>" . htmlspecialchars($row["q3"]) . "</td>";
+    // echo "<td>" . htmlspecialchars($row["q4"]) . "</td>";
+    // echo "</tr>";
+// }
+// $result->closeCursor();
+
+
 <?php
-$query = "SELECT user_id, q1, q2,q3,q4"
-     . "FROM question_scores1";
+$query = "SELECT user_id, first_name, last_name, email, studentid  "
+     . "FROM users ORDER BY last_name ASC, first_name ASC";
 $result = $db->query($query);
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     echo "<tr>";
     echo "<td>" . $row["user_id"] . "</td>";
-    echo "<td>" . htmlspecialchars($row["q1"]) . "</td>";
-    echo "<td>" . htmlspecialchars($row["q2"]) . "</td>";
-    echo "<td>" . htmlspecialchars($row["q3"]) . "</td>";
-    echo "<td>" . htmlspecialchars($row["q4"]) . "</td>";
+    echo "<td>" . htmlspecialchars($row["first_name"]) . "</td>";
+    echo "<td>" . htmlspecialchars($row["last_name"]) . "</td>";
+    echo "<td>" . htmlspecialchars($row["email"]) . "</td>";
+    echo "<td>" . htmlspecialchars($row["studentid"]) . "</td>";
     echo "</tr>";
 }
 $result->closeCursor();
@@ -84,7 +100,7 @@ $result->closeCursor();
 
   <br>
   
-
+</div>
 <script src="./newjs.js"></script>
 </body>
 
