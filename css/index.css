@@ -1,77 +1,174 @@
-    
+/*     
 body {
     padding-top: 54px;
     background-color: #b2f7e0;
+  } */
+
+  body {
+    padding-top: 54px;
+    background-image: url(background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
-  p{
+  p {
     text-align: center;
+  }
+
+  /* The landing page container which centers content with white background */
+  .containerWork {
+    margin: 1.5em auto;
+    max-width: 900px;
+    width: 80%;
+    padding: 1%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.7);
+  }
+
+  /* The e-factor banner */
+  .cenBanner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+  }
+
+  /* material icon font size */
+  .material-icons.md-90 {
+    font-size: 90px;
+    color: white;
+  }
+
+  /* This center the the icon */
+  #inner {
+    width: 35%;
+    margin: auto;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 46%;
+    border-radius: 15px;
+    margin: 2%;
+    padding: 10px;
+    color: rgb(255, 255, 255, 1);
+    background-image: url(background2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 220px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 96%;
     }
-    
-    /* less than 33% but more than or equal to 25%*/
-    .containerWork {
-        margin: 1.5em auto;
-        max-width: 900px;
-        width: 80%;
-    }
-    
-    .cenBanner {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 900px;
-        border-radius: 10px;
-    }
-    
-    .slidecontainer {
-        width: 100%;
-      }
-      
-      .slider {
-        -webkit-appearance: none;
-        width: 100%;
-        height: 15px;
-        border-radius: 5px;
-        background: #d3d3d3;
-        outline: none;
-        opacity: 0.7;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-      }
-      
-      .slider:hover {
-        opacity: 1;
-      }
-      
-      .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: teal;
-        cursor: pointer;
-      }
-      
-      .slider::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: teal;
-        cursor: pointer;
-      }
-     
-      .tealcol{
-          color: teal;
-      }
-    
-      .slider{
-          height: 0px;
-      }
-    
-    tr {
-        border-bottom: none;
-    }
-    
-    
+  }
+
+  /* FORM */
+  #regForm {
+    /* background-color: #ffffff; */
+    margin: 2%;
+    padding: 40px;
+    width: 96%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    /* padding: 10px; */
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none; 
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #4CAF50;
+  }
+
+  /* Slider */
+
+  .slidecontainer {
+    width: 100%;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: dodgerblue;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: dodgerblue;
+    cursor: pointer;
+  }
+
+  .w1{
+   width: 100%;
+  }
