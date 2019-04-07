@@ -27,5 +27,5 @@ $sql = pg_query($dbconn3, "INSERT INTO question_scores1 (q1,q2,q3,q4)
 VALUES('$q1', '$q2', '$q3', '$q4')");
 
 }
-
+header('Location: results.php'); // redirect to results
 ?>
