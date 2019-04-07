@@ -73,20 +73,24 @@ $db = new PDO($dsn);
 
         <p>Write in appropriate tone & style for the audience: <span id="demo1"></span></p>
         <div class="slidecontainer">
-          <input class="slider" id="myRange1" name = "q1" type="range" min="1" max="10" value="0" >
+        <input type="number" name="q1" id="q1" min="0" max="10" value="0">
+          <!-- <input class="slider" id="myRange1" name = "q1" type="range" min="1" max="10" value="0" > -->
         </div><br>
         <p>Speak Clearly to different audiences: <span id="demo2"></span></p>
         <div class="slidecontainer">
-          <input class="slider" id="myRange2" name ="q2" type="range" min="1" max="10" value="0" >
+        <input type="number" name="q2" id="q2" min="0" max="10" value="0">
+          <!-- <input class="slider" id="myRange2" name ="q2" type="range" min="1" max="10" value="0" > -->
         </div><br>
         <p>Edit my own written work: <span id="demo3"></span></p>
         <div class="slidecontainer">
-          <input class="slider" id="myRange3" name="q3" type="range" min="1" max="10" value="0" >
+        <input type="number" name="q3" id="q3" min="0" max="10" value="0">
+          <!-- <input class="slider" id="myRange3" name="q3" type="range" min="1" max="10" value="0" > -->
         </div><br>
         <p>Use correct spelling, punctuation & Grammar: <span id="demo4"></span></p>
         <div class="slidecontainer">
           <div class="slidecontainer">
-            <input class="slider" id="myRange4" name="q4" type="range" min="1" max="10" value="0" >
+          <input type="number" name="q4" id="q4" min="0" max="10" value="0">
+            <!-- <input class="slider" id="myRange4" name="q4" type="range" min="1" max="10" value="0" > -->
           </div>
           <br>
           <!-- <p><input placeholder="First name..." oninput="this.className = ''"></p>
