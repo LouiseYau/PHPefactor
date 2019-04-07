@@ -65,7 +65,7 @@ $db = new PDO($dsn);
     <!-- <h4 align="center" style="color: teal;">VERBAL & WRITTEN COMMUNICATION</h4> -->
 
 <!-- form starts here -->
-     <form id="regForm" action="assessment.php" method="post" >
+     <form id="regForm" action="postScore.php" method="post" >
       <!-- One "tab" for each step in the form: -->
       <h4 align="center" style="color: teal;">VERBAL & WRITTEN COMMUNICATION</h4>
       <br>
@@ -131,28 +131,7 @@ $db = new PDO($dsn);
         </div>
 
     </form>
-<?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 
-$q1 = $_POST['q1'];
-$q2 = $_POST['q2'];
-$q3 = $_POST['q3'];
-$q4 = $_POST['q4'];
-
-
-
-$data = [
-  'name' => $name,
-  'surname' => $surname,
-  'sex' => $sex,
-];
-// $sql = "INSERT INTO users (name, surname, sex) VALUES (:name, :surname, :sex)";
-$sql = "INSERT INTO question_scores1 (q1,q2,q3,q4) VALUES(:q1, :q2, :q3, :q4)";
-$stmt= $db->prepare($sql);
-$stmt->execute($data);
-
-?>
   </div>
 
   <!-- Javascript at the bottom of the page as of the DOM structure -->
